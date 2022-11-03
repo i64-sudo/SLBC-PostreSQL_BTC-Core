@@ -43,6 +43,15 @@ There is also ALL used adresses **from 2009-Present_Day at 27-30Gb of Data**
 > * **http://addresses.loyce.club/blockchair_bitcoin_addresses_and_balance_LATEST.tsv.gz - Leatest BLOCK dumped (TODAY)**
 > * **http://alladdresses.loyce.club/all_Bitcoin_addresses_ever_used_sorted.txt.gz - Enitre BLOCK (2009-2023)**
 
+# Documents on postreSQL
+> * **All - https://www.postgresql.org/docs/current/index.html**
+> * **Important Tasks**
+> * **Maintenance & SQL Documentation - https://www.postgresql.org/docs/current/sql.html**
+> * **Server Administration - https://www.postgresql.org/docs/current/admin.html**
+> * **Client Interfaces - https://www.postgresql.org/docs/current/client-interfaces.html**
+> * **Server Managment - https://www.postgresql.org/docs/current/server-programming.html**
+> * **Server Appendixes - https://www.postgresql.org/docs/current/appendixes.html**
+
 # How to Setup
 ## ℹ️ Install PostgreSQL ℹ️
 
@@ -117,14 +126,6 @@ https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/1858002
 CREATE INDEX index_hunter
 ON hunter (address, balance);
 ```
-
-# Documents on postreSQL
-> * **Full Documentation - https://www.postgresql.org/docs/current/index.html**
-> * **Maintenance & SQL Documentation - https://www.postgresql.org/docs/current/sql.html**
-> * **Server Administration - https://www.postgresql.org/docs/current/admin.html**
-> * **Client Interfaces - https://www.postgresql.org/docs/current/client-interfaces.html**
-> * **Server Managment - https://www.postgresql.org/docs/current/server-programming.html**
-> * **Server Appendixes - https://www.postgresql.org/docs/current/appendixes.html**
 
 ```
 MIT License
