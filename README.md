@@ -45,7 +45,6 @@ There is also ALL used adresses **from 2009-Present_Day at 27-30Gb of Data**
 
 # Documents on postreSQL
 > * **All - https://www.postgresql.org/docs/current/index.html**
-> * **Important Tasks**
 > * **Maintenance & SQL Documentation - https://www.postgresql.org/docs/current/sql.html**
 > * **Server Administration - https://www.postgresql.org/docs/current/admin.html**
 > * **Client Interfaces - https://www.postgresql.org/docs/current/client-interfaces.html**
