@@ -118,6 +118,15 @@ CREATE INDEX index_hunter
 ON hunter (address, balance);
 ```
 
+# Documents on postreSQL
+> * **All - https://www.postgresql.org/docs/current/index.html**
+> * **Important Tasks**
+> * **Maintenance & SQL Documentation - https://www.postgresql.org/docs/current/sql.html**
+> * **Server Administration - https://www.postgresql.org/docs/current/admin.html**
+> * **Client Interfaces - https://www.postgresql.org/docs/current/client-interfaces.html**
+> * **Server Managment - https://www.postgresql.org/docs/current/server-programming.html**
+> * **Server Appendixes - https://www.postgresql.org/docs/current/appendixes.html**
+
 ```
 MIT License
 
