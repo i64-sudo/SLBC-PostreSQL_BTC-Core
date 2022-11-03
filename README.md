@@ -76,9 +76,10 @@ C:\Program Files\PostgreSQL\14\bin
 ```
 
 ```
-set FLASK_APP=app.py
-set FLASK_ENV=development
-flask run --host=0.0.0.0
+To start the host, Run the file "exec_PostreSQL.py"
+
+python3 exec_PostreSQL.py
+python exec PostreSQL.py
 ```
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb3.mp4
 
