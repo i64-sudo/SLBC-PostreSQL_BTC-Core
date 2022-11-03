@@ -40,8 +40,8 @@ There is also ALL used adresses **from 2009-Present_Day at 27-30Gb of Data**
 > * Auto Updating Features and Options
 
 # BLOCK Sources
-> * **http://addresses.loyce.club/blockchair_bitcoin_addresses_and_balance_LATEST.tsv.gz**
-> * **http://alladdresses.loyce.club/all_Bitcoin_addresses_ever_used_sorted.txt.gz**
+> * **http://addresses.loyce.club/blockchair_bitcoin_addresses_and_balance_LATEST.tsv.gz - Leatest BLOCK dumped (TODAY)**
+> * **http://alladdresses.loyce.club/all_Bitcoin_addresses_ever_used_sorted.txt.gz - Enitre BLOCK (2009-2023)**
 
 # How to Setup
 ## ℹ️ Install PostgreSQL ℹ️
