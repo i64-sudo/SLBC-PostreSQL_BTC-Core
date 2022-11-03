@@ -39,6 +39,10 @@ There is also ALL used adresses **from 2009-Present_Day at 27-30Gb of Data**
 > * Functions to download Specific Dated or Previous wallet dumps
 > * Auto Updating Features and Options
 
+# BLOCK Sources
+> * **http://addresses.loyce.club/blockchair_bitcoin_addresses_and_balance_LATEST.tsv.gz**
+> * **http://alladdresses.loyce.club/all_Bitcoin_addresses_ever_used_sorted.txt.gz**
+
 # How to Setup
 ## ℹ️ Install PostgreSQL ℹ️
 
