@@ -66,6 +66,7 @@ pip install waitress
 ```
 ## ℹ️ Import bitcoin.tsv block ℹ️
 You will need to import a Bitcoin BLOCK from the BLOCK Sources linked above, Download either or of the Source links and rename it to "block.tsv" and import it into /flask_app and then import it to your database with the video below (Same link used in video, Just differient source THAT IS BETTER)
+
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788486-e08b1685-db89-4af1-b6a5-9267798ac20c.mp4
 
 
