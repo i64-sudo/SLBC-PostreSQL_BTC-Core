@@ -119,8 +119,7 @@ ON hunter (address, balance);
 ```
 
 # Documents on postreSQL
-> * **All - https://www.postgresql.org/docs/current/index.html**
-> * **Important Tasks**
+> * **Full Documentation - https://www.postgresql.org/docs/current/index.html**
 > * **Maintenance & SQL Documentation - https://www.postgresql.org/docs/current/sql.html**
 > * **Server Administration - https://www.postgresql.org/docs/current/admin.html**
 > * **Client Interfaces - https://www.postgresql.org/docs/current/client-interfaces.html**
