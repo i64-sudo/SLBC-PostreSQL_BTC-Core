@@ -41,8 +41,7 @@ There is also ALL used adresses **from 2009-Present_Day at 27-30Gb of Data**
 # How to Setup
 ## ℹ️ Install PostgreSQL ℹ️
 
-https://user-images.githubusercontent.com/88630056/185788464-b4d02e62-1069-4a29-83d4-95bb2cbc9e51.mp4
-
+https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788464-b4d02e62-1069-4a29-83d4-95bb2cbc9e51.mp4
 
 ## ℹ️ Create Table ℹ️
 ```
@@ -51,7 +50,7 @@ address VARCHAR(80) not null,
 balance VARCHAR(30) not null
 );
 ```
-https://user-images.githubusercontent.com/88630056/185788481-044d26ed-213e-4a86-8c8d-118395f85225.mp4
+https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788481-044d26ed-213e-4a86-8c8d-118395f85225.mp4
 
 
 ## ℹ️ Install Flask psycopg2 waitress ℹ️
@@ -60,7 +59,7 @@ pip install flask
 pip install psycopg2
 pip install waitress
 ```
-https://user-images.githubusercontent.com/88630056/185788486-e08b1685-db89-4af1-b6a5-9267798ac20c.mp4
+https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788486-e08b1685-db89-4af1-b6a5-9267798ac20c.mp4
 
 
 ## ℹ️ Import and Use ℹ️
@@ -76,7 +75,7 @@ set FLASK_APP=app.py
 set FLASK_ENV=development
 flask run --host=0.0.0.0
 ```
-https://user-images.githubusercontent.com/88630056/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb3.mp4
+https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb3.mp4
 
 ```
 http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
@@ -102,8 +101,7 @@ on table_name (conditional_expression);
 
 
 
-https://user-images.githubusercontent.com/88630056/185800209-0e772b64-dd85-41b3-aaec-99d0952d73e6.mp4
-
+https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185800209-0e772b64-dd85-41b3-aaec-99d0952d73e6.mp4
 
 ```
 CREATE INDEX index_hunter
