@@ -119,7 +119,7 @@ print("whole value" + str(r))
 print("address" + str(r[0]))
 print("balance" + str(r[1]))
 ```
-# 🦞Usage with FLASK🦞
+# 🦞Usage with FLASK/HTTP🦞
 ```
 Coming Soon
 ```
