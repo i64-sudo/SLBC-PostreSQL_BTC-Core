@@ -54,11 +54,6 @@ Import your list off addresses with Balance.The  first time that you try to impo
 C:\Program Files\PostgreSQL\15\bin
 ```
 
-```bash
-set FLASK_APP=app.py
-set FLASK_ENV=development
-flask run --host=0.0.0.0
-```
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb3.mp4
 
 ```
