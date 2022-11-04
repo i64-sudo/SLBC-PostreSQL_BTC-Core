@@ -54,7 +54,7 @@ Import your list off addresses with Balance.The  first time that you try to impo
 C:\Program Files\PostgreSQL\15\bin
 ```
 
-https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb3.mp4
+https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb2.mp4
 
 ```
 http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
