@@ -2,7 +2,7 @@
 # ✅Short Length Bitcoin Core - Better Bitcoin Core✅
 Short Length Bitcoin Core or *SLBC* is a clone of the Bitcoin Core that has been shortened, compressed, cutted and applied to PostgreSQL Database, Unlike the Bitcoin Core that is 400Gb that stores ***Transactions, Wallets, Wallet ID's, Blocks, Hashes, Etc*** Our database only contains the functional requirements for most public projects like ***Wallets, Wallet ID's, Wallet Balances, Etc***.
 
-# File Comparisons
+# ✅File Comparisons✅
 > * **Bitcoin Core (2009 - 2023 - Uncompressed) - 400GB**
 > * **Bitcoin Core Contains [:Transactions, Wallets, Wallet ID's, Transaction Blocks, Mneomic Phrases, Etc:]**
 > * **PostreSQL Core (2009 - 2023 - Compressed) - 26-33GB**
@@ -69,14 +69,14 @@ http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
 
 You will Find Without indexing the Databse the Request will be slow. More Information ( https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm )
 
-## Unique Indexes
+## 💥Unique Indexes💥
 
 Unique indexes are used not only for performance, but also for data integrity. A unique index does not allow any duplicate values to be inserted into the table. The basic syntax is as follows −
 ```sql
 CREATE UNIQUE INDEX index_name
 on table_name (column_name);
 ```
-## Partial Indexes
+## 💥Partial Indexes💥
 
 A partial index is an index built over a subset of a table; the subset is defined by a conditional expression (called the predicate of the partial index). The index contains entries only for those table rows that satisfy the predicate. The basic syntax is as follows −
 ```sql
@@ -92,7 +92,47 @@ CREATE INDEX index_hunter
 ON hunter (address, balance);
 ```
 
-# ⚙️Proper Configuration (MUST FOLLOW)⚙️
-Running the program with the Above Mention steps only will result in SEVERAL Errors, Bugs and Such, We recommend
-that you follow these basic configurations and changes to insure the server is healthy and running well.
-# ℹ️ Additional Help ℹ️
+# 🦞Usage🦞
+The best way to use the PostgreSQL Index/Classes is to implement it within your code.
+```python
+# Python Example #
+import psycopg2
+
+# PostgreSQL Server Settings #
+final_balance = 'balance'
+address = 'address'
+conn = psycopg2.connect(dbname="bitcoin", user='postgres',
+
+                        password='1234', host='localhost', port=5432)
+cursor = conn.cursor()
+table = "hunter"
+
+# Function to Get BTC and Return Value of Wallet #
+def GetBTC(addrU):
+    try:
+        query = "SELECT * FROM " + table + " WHERE address = '" + addrU + "';"
+        cursor.execute(query)
+        try:
+            res = cursor.fetchall()
+            return res[0]
+        except: 
+            return ['0', '0']
+    except:
+        return -1
+
+r = GetBTC("1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF")
+print("whole value" + str(r))
+print("address" + str(r[0]))
+print("balance" + str(r[1]))
+```
+# ⚙️Extra Information⚙️
+> * ℹ️ **The SQL Language - https://www.postgresql.org/docs/current/sql.html**
+> * ℹ️ **Server Administration - https://www.postgresql.org/docs/current/admin.html**
+> * ℹ️ **Server Administration - https://www.postgresql.org/docs/current/admin.html**
+> * ℹ️ **Client Interfaces - https://www.postgresql.org/docs/current/client-interfaces.html**
+> * ℹ️ **Server Programming - https://www.postgresql.org/docs/current/server-programming.html**
+> * ℹ️ **Reference - https://www.postgresql.org/docs/current/reference.html**
+> * ℹ️ **Internals - https://www.postgresql.org/docs/current/internals.html**
+> * ℹ️ **Appendixes - https://www.postgresql.org/docs/current/appendixes.html**
+
+# LICENSED WITH MIT #
