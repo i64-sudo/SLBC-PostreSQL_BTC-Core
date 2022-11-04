@@ -1,5 +1,4 @@
 import socket
-import random
  
 CONN_HOST = "127.0.0.1"
 CONN_PORT = 5959

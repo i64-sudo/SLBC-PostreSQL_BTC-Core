@@ -27,7 +27,7 @@ def GetBTC(addrU):
     except:
         return -1
 
-
+print(f"[+] Socket host is running on {HOST}:{PORT}")
 while(True):
     (clientConnected, clientAddress) = serverSocket.accept()
     print("Accepted a connection request from %s:%s"%(clientAddress[0], clientAddress[1]))
