@@ -2,7 +2,7 @@
 # ✅Short Length Bitcoin Core - Better Bitcoin Core✅
 Short Length Bitcoin Core or *SLBC* is a clone of the Bitcoin Core that has been shortened, compressed, cutted and applied to PostgreSQL Database, Unlike the Bitcoin Core that is 400Gb that stores ***Transactions, Wallets, Wallet ID's, Blocks, Hashes, Etc*** Our database only contains the functional requirements for most public projects like ***Wallets, Wallet ID's, Wallet Balances, Etc***.
 
-# File Comparisons
+# ✅File Comparisons✅
 > * **Bitcoin Core (2009 - 2023 - Uncompressed) - 400GB**
 > * **Bitcoin Core Contains [:Transactions, Wallets, Wallet ID's, Transaction Blocks, Mneomic Phrases, Etc:]**
 > * **PostreSQL Core (2009 - 2023 - Compressed) - 26-33GB**
