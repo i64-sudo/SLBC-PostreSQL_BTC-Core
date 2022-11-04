@@ -56,10 +56,6 @@ C:\Program Files\PostgreSQL\15\bin
 
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb1.mp4 **Video is glitched, Download it to watch**
 
-```
-http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
-```
-
 # 💡 Index Database 💡
 
 You will Find Without indexing the Databse the Request will be slow. More Information ( https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm )
@@ -172,6 +168,10 @@ def hello():
 if __name__ == '__main__':
     app.debug = True
     app.run()
+```
+# 🦞Connecting🦞 #
+```
+http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
 ```
 # ⚙️Extra Information⚙️
 > * ℹ️ **The SQL Language - https://www.postgresql.org/docs/current/sql.html**
