@@ -54,7 +54,9 @@ Import your list off addresses with Balance.The  first time that you try to impo
 C:\Program Files\PostgreSQL\15\bin
 ```
 
+
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788493-6b38bdbd-d327-4606-926d-54c2ea898cb2.mp4
+
 
 ```
 http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
@@ -78,7 +80,6 @@ A partial index is an index built over a subset of a table; the subset is define
 CREATE INDEX index_name
 on table_name (conditional_expression);
 ```
-
 
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185800209-0e772b64-dd85-41b3-aaec-99d0952d73e6.mp4
 
