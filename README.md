@@ -1,22 +1,22 @@
 ## ![alt text](https://raw.githubusercontent.com/Zurek0x/SLBC-PostreSQL_BTC-Core/main/readme.data/postgresql-monitoring-.webp)
-# ✅Short Length Bitcoin Core - Better Bitcoin Core✅
+## ✅Short Length Bitcoin Core - Better Bitcoin Core✅
 Short Length Bitcoin Core or *SLBC* is a clone of the Bitcoin Core that has been shortened, compressed, cutted and applied to PostgreSQL Database, Unlike the Bitcoin Core that is 400Gb that stores ***Transactions, Wallets, Wallet ID's, Blocks, Hashes, Etc*** Our database only contains the functional requirements for most public projects like ***Wallets, Wallet ID's, Wallet Balances, Etc***.
 
-# ✅File Comparisons✅
+## ✅File Comparisons✅
 > * **Bitcoin Core (2009 - 2023 - Uncompressed) - 400GB**
 > * **Bitcoin Core Contains [:Transactions, Wallets, Wallet ID's, Transaction Blocks, Mneomic Phrases, Etc:]**
 > * **PostreSQL Core (2009 - 2023 - Compressed) - 26-33GB**
 > * **PostreSQL Core Contains [:Wallets, Wallet ID's, Balances:]**
 
 
-# ✅Block Installation✅
+## ✅Block Installation✅
 We utilize what we call BLOCKS for our database, Essentially we dump the bitcoin core **400Gb** and swap out everything only for the essentials we need like ***Wallets, Wallet ID's, Wallet Balances*** Saving us over **370Gb of Data** and publish it under a specific date, We dump new BLOCKS every day or two at the link here -> **http://addresses.loyce.club/**
 
 # ✅Support✅
 * **Windows 10/11 22H1+22H2 (TESTED - OK)**
 * **Debian Based Linux Distro's (Ubuntu/Lubuntu/Debnian TESTED - OK)**
 
-# ✅SETUP✅
+## ✅SETUP✅
 
 ## ℹ️ NOTICE ℹ️
 **This ISN'T a guide on how to fully setup a bitcoin database, We are just providing the necessary info to setup and start a server for beginners, For long term support you will need Basic > Advanced knowledge with Python & PostgreSQL to insure that
