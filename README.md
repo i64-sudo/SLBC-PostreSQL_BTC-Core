@@ -1,55 +1,34 @@
-![alt text](https://raw.githubusercontent.com/Zurek0x/SLBC-PostreSQL_BTC-Core/main/readme.data/postgresql-monitoring-.webp)
-# Short Length Bitcoin Core - PostreSQL Fork;
-This is a short cut version of the Bitcoin Core Database imported to the PostreSQL Datbase,
-We used a cached version of the Bitcoin Core from certain Dates and import it into the PostreSQL Database
-that can be called through the API.
-
-# How We Use Short Length;
-We dump all Transactions and Funded bitcoin wallets from a certain date (EX: 11/3/2022)
-and dump it to a DATABASE File that we can import to our Database, By doing this we save hundreds of gigabytes
-while also get recently funded and recently used bitcoin wallets that may be active.
-**Service We Use >> http://alladdresses.loyce.club/daily_updates/ - Speci** 
-
-# Auto Updated Lists;
-Every day a new updated list of Bitcoin Wallet Adresses is published to loyce.club,
-We are although not affiliated with them but do use there dumps under Fair Use,
-There is also ALL used adresses **from 2009-Present_Day at 27-30Gb of Data**
+## ![alt text](https://raw.githubusercontent.com/Zurek0x/SLBC-PostreSQL_BTC-Core/main/readme.data/postgresql-monitoring-.webp)
+# ✅Short Length Bitcoin Core - Better Bitcoin Core✅
+Short Length Bitcoin Core or *SLBC* is a clone of the Bitcoin Core that has been shortened, compressed, cutted and applied to PostgreSQL Database, Unlike the Bitcoin Core that is 400Gb that stores ***Transactions, Wallets, Wallet ID's, Blocks, Hashes, Etc*** Our database only contains the functional requirements for most public projects like ***Wallets, Wallet ID's, Wallet Balances, Etc***.
 
 # File Comparisons
 > * **Bitcoin Core (2009 - 2023 - Uncompressed) - 400GB**
-> * **Bitcoin Core Contains [:Transactions, Wallets, Wallet ID's, Transaction Blocks:]**
+> * **Bitcoin Core Contains [:Transactions, Wallets, Wallet ID's, Transaction Blocks, Mneomic Phrases, Etc:]**
 > * **PostreSQL Core (2009 - 2023 - Compressed) - 26-33GB**
 > * **PostreSQL Core Contains [:Wallets, Wallet ID's, Balances:]**
 
-# Database Features;
-> Database Features
-> * Lots of customization options
-> * Better support for the Bitcoin Core
-> * Lower RAM & CPU Usage
-> * Lower Storage Space
-> * Windows 10/11 & Debian Linux Support
->
-> Database Functions
-> * Bitcoin Wallet Searcher and Re-Finder (Based on Date)
-> * Bitcoin Wallet Balance Searcher and Re-Finder (Based on Wallet)
-> * HTTP/S Secured Connection based from LocalHost -> Port
->
-> Database Updates
-> * Functions to download Multiple Leatest or Previous wallet dumps
-> * Functions to download Specific Dated or Previous wallet dumps
-> * Auto Updating Features and Options
 
-# BLOCK Sources
-> * **http://addresses.loyce.club/blockchair_bitcoin_addresses_and_balance_LATEST.tsv.gz - Leatest BLOCK dumped (TODAY)**
-> * **http://alladdresses.loyce.club/all_Bitcoin_addresses_ever_used_sorted.txt.gz - Enitre BLOCK (2009-2023)**
+# ✅Block Installation✅
+We utilize what we call BLOCKS for our database, Essentially we dump the bitcoin core **400Gb** and swap out everything only for the essentials we need like ***Wallets, Wallet ID's, Wallet Balances*** Saving us over **370Gb of Data** and publish it under a specific date, We dump new BLOCKS every day or two at the link here -> **http://addresses.loyce.club/**
 
-# How to Setup
+# ✅Support✅
+* **Windows 10/11 22H1+22H2 (TESTED - OK)**
+* **Debian Based Linux Distro's (Ubuntu/Lubuntu/Debnian TESTED - OK)**
+
+# ✅SETUP✅
+
+## ℹ️ NOTICE ℹ️
+**This ISN'T a guide on how to fully setup a bitcoin database, We are just providing the necessary info to setup and start a server for beginners, For long term support you will need Basic > Advanced knowledge with Python & PostgreSQL to insure that
+Your server is running well, Your database is running well and to fix issues and bugs that may occur.
+If there is a minor error, Do not create a issue in our issues tab.**
+
 ## ℹ️ Install PostgreSQL ℹ️
 
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185788464-b4d02e62-1069-4a29-83d4-95bb2cbc9e51.mp4
 
 ## ℹ️ Create Table ℹ️
-```
+```sql
 CREATE TABLE hunter(
 address VARCHAR(80) not null,
 balance VARCHAR(30) not null
@@ -59,7 +38,7 @@ https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/1857884
 
 
 ## ℹ️ Install Flask psycopg2 waitress ℹ️
-```
+```python
 pip install flask
 pip install psycopg2
 pip install waitress
@@ -72,10 +51,10 @@ https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/1857884
 Import your list off addresses with Balance.The  first time that you try to import PostgreSQL will give you error reguarding Binary Path in the Preferences dialog. To Resolve  Correct The Binary Path pgAdmin 4  PostgreSQL 14. We need to set the bin path of the PostgreSQL installation which is not done at the time of installation. You will need to update the PATH on your PostgreSQL. 
 
 ```
-C:\Program Files\PostgreSQL\14\bin
+C:\Program Files\PostgreSQL\15\bin
 ```
 
-```
+```bash
 set FLASK_APP=app.py
 set FLASK_ENV=development
 flask run --host=0.0.0.0
@@ -93,46 +72,27 @@ You will Find Without indexing the Databse the Request will be slow. More Inform
 ## Unique Indexes
 
 Unique indexes are used not only for performance, but also for data integrity. A unique index does not allow any duplicate values to be inserted into the table. The basic syntax is as follows −
-
+```sql
 CREATE UNIQUE INDEX index_name
 on table_name (column_name);
-
+```
 ## Partial Indexes
 
 A partial index is an index built over a subset of a table; the subset is defined by a conditional expression (called the predicate of the partial index). The index contains entries only for those table rows that satisfy the predicate. The basic syntax is as follows −
-
+```sql
 CREATE INDEX index_name
 on table_name (conditional_expression);
-
+```
 
 
 https://github.com/Zurek0x/SLBC-PostreSQL_BTC-Core/blob/main/readme.data/185800209-0e772b64-dd85-41b3-aaec-99d0952d73e6.mp4
 
-```
+```sql
 CREATE INDEX index_hunter
 ON hunter (address, balance);
 ```
 
-```
-MIT License
-
-Copyright (c) 2022 Ezekiel
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+# ⚙️Proper Configuration (MUST FOLLOW)⚙️
+Running the program with the Above Mention steps only will result in SEVERAL Errors, Bugs and Such, We recommend
+that you follow these basic configurations and changes to insure the server is healthy and running well.
+# ℹ️ Additional Help ℹ️
