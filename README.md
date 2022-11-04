@@ -173,7 +173,7 @@ if __name__ == '__main__':
 ```
 http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
 ```
-# 🦞Connecting with SOCKETS & SERVER🦞 #
+# 🦞Usage with SOCKETS & SERVER🦞 #
 ```python
 import socket
 import psycopg2
