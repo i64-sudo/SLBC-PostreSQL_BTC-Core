@@ -119,6 +119,10 @@ print("whole value" + str(r))
 print("address" + str(r[0]))
 print("balance" + str(r[1]))
 ```
+# 🦞Usage with FLASK🦞
+```
+Coming Soon
+```
 # ⚙️Extra Information⚙️
 > * ℹ️ **The SQL Language - https://www.postgresql.org/docs/current/sql.html**
 > * ℹ️ **Server Administration - https://www.postgresql.org/docs/current/admin.html**
