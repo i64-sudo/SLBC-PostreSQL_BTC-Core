@@ -169,9 +169,75 @@ if __name__ == '__main__':
     app.debug = True
     app.run()
 ```
-# 🦞Connecting🦞 #
+# 🦞Connecting with FLASK/HTTP🦞 #
 ```
 http://127.0.0.1:5000/balance?active=1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF
+```
+# 🦞Connecting with SOCKETS & SERVER🦞 #
+```python
+import socket
+import psycopg2
+
+HOST = "127.0.0.1"
+PORT = 5959
+
+serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serverSocket.bind((HOST,PORT))
+serverSocket.listen()
+
+
+final_balance = 'balance'
+address = 'address'
+conn = psycopg2.connect(dbname="bitcoin", user='postgres',
+                        password='1234', host='localhost', port=5432)
+cursor = conn.cursor()
+table = "hunter"
+def GetBTC(addrU):
+    try:
+        query = "SELECT * FROM " + table + " WHERE address = '" + addrU + "';"
+        cursor.execute(query)
+        try:
+            res = cursor.fetchall()
+            return res[0]
+        except: 
+            return ['0', '0']
+    except:
+        return -1
+
+
+while(True):
+    (clientConnected, clientAddress) = serverSocket.accept()
+    print("Accepted a connection request from %s:%s"%(clientAddress[0], clientAddress[1]))
+    dataFromClient = clientConnected.recv(1024)
+    dataFromClient_DECODED = dataFromClient.decode()
+    GET_DATABASE_REQUEST = GetBTC(addrU=dataFromClient_DECODED)
+    clientConnected.send(bytes(f"{GET_DATABASE_REQUEST[0]} {GET_DATABASE_REQUEST[1]}", "utf-8"))
+    print("Accepted a database request from %s:%s"%(clientAddress[0], clientAddress[1]))
+```
+# 🦞Connecting with SOCKETS & SERVER🦞 #
+```python
+import socket
+import random
+ 
+CONN_HOST = "127.0.0.1"
+CONN_PORT = 5959
+
+clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+clientSocket.connect((CONN_HOST, CONN_PORT))
+
+
+data = str("1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF")
+
+clientSocket.send(data.encode())
+dataFromServer = clientSocket.recv(1024)
+dataFromServer_DECODED = dataFromServer.decode("utf-8")
+dataRECV = dataFromServer_DECODED.split()
+print("whole value: " + str(dataRECV))
+print("address: " + str(dataRECV[0]))
+print("balance: " + str(dataRECV[1]))
+
+while True:
+    pass
 ```
 # ⚙️Extra Information⚙️
 > * ℹ️ **The SQL Language - https://www.postgresql.org/docs/current/sql.html**
