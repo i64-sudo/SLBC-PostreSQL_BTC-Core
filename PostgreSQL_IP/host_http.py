@@ -1,9 +1,13 @@
 from flask import Flask, request
 import socket
+import json
 app = Flask(__name__)
 
 CONN_HOST = "127.0.0.1"
 CONN_PORT = 5959
+
+HTTP_HOST = "127.0.0.1"
+HTTP_PORT = 5000
 
 def get_wallet_info(wallet):
     clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,4 +33,4 @@ def hello():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    app.run(host=HTTP_HOST, port=HTTP_PORT)
