@@ -34,9 +34,9 @@ def get_wallet_info(wallet):
     #else:
     #    return res[0]
     try:
-        res = [wallet, dataRECV[0]]
+        res = [wallet, dataRECV[1]]
         #print(res[0])
-        return res[0]
+        return res
     except: 
         return ['0', '0', '0', '0']
 
@@ -46,6 +46,7 @@ def parse_wallet():
     result = "{"
     for wallet in btc_wallet_list:
         wallet_info = get_wallet_info(wallet)
+        print(wallet_info)
         transaction_sum = 0
         n_transaction = 0
         balance = wallet_info[1]
