@@ -10,7 +10,7 @@ Short Length Bitcoin Core or *SLBC* is a clone of the Bitcoin Core that has been
 
 
 ## ✅Block Installation✅
-We utilize what we call BLOCKS for our database, Essentially we dump the bitcoin core **400Gb** and swap out everything only for the essentials we need like ***Wallets, Wallet ID's, Wallet Balances*** Saving us over **370Gb of Data** and publish it under a specific date, We dump new BLOCKS every day or two at the link here -> **http://addresses.loyce.club/**
+We utilize what we call BLOCKS for our database, Essentially we dump the bitcoin core **400Gb** and swap out everything only for the essentials we need like ***Wallets, Wallet ID's, Wallet Balances*** Saving us over **370Gb of Data** and publish it under a specific date, We dump new BLOCKS every day or two at the link here -> **http://addresses.loyce.club/blockchair_bitcoin_addresses_and_balance_LATEST.tsv.gz**
 
 ## ✅Support✅
 * **Windows 10/11 22H1+22H2 (TESTED - OK)**
